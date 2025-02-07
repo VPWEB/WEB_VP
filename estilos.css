@@ -55,7 +55,7 @@ h2 {
 }
 
 header {
-    background: url(oscuro.avif);
+    background: url(oscuro.png);
     height: 100vh; /* para que el fondo ocupe el 100 */
     background-size: cover;
     /* background-size: el fondo se adapta a la ventana*/
