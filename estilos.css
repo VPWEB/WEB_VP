@@ -107,7 +107,7 @@ h3 {
     display: inline-block;
 }
 
-.parrafo.final {
+.parrafo-final {
     margin-bottom: 30px;
 }
 
@@ -123,4 +123,33 @@ h3 {
 .servicio {
     width: 29%;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenedor-sobremi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-sobremi img {
+        margin-bottom: 20px;
+    }
+
+    .contenedor-texto-y-boton {
+        width: 90%;
+    }
+
+    .contenedor-2 {
+        padding: 20px;
+    }
 }
