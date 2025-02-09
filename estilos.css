@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.menu p {
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+ul {
+    display: flex;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#boton {
+    text-decoration: none;
+    font-size: 14px;
+    background-color:darkturquoise;
+    color: black;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3 ease-in-out;
+}
+.boton a:hover {
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.01);
+    box-shadow: 0px 4px 10px rgba(0, 188, 212, 0.5);
+}
+
+
+.titular {
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+header {
+    background: url(oscuro.png);
+    height: 100vh; /* para que el fondo ocupe el 100 */
+    background-size: cover;
+    /* background-size: el fondo se adapta a la ventana*/
+}
+
+section {
+    background-color: #e9f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* reducir tamaño imagen*/
+
+.contenedor-sobremi img {
+    width: 350px;
+    border-radius: 8px; 
+    box-shadow: 10px 10px 30px rgba(0, 0,0,0.3);   
+}
+
+/*Seccion sobre mi*/
+
+h3 {
+    margin-top: 0;
+    padding-top: 30px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    color: #134b5f;
+    background-color: #e9f5f9;
+}
+
+.contenedor-sobremi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.contenedor-texto-y-boton {
+    width: 42%;
+}
+
+.contenedor-texto-y-boton p {
+    color: #0c4b5b;
+    font-size: 18px;
+}
+
+.contenedor-texto-y-boton a {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.parrafo-final {
+    margin-bottom: 30px;
+}
+
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap; /* contenedor del flex. para poner 3 en una linea
+    y 3 en otra*/
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.servicio {
+    color: white;
+    width: 25%;
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.negro {
+    background: #1E1E1E;
+}
+
+.celeste {
+    background: #00CED1;
+    color: black;
+}
+
+.servicio img {
+    float: right;
+}
+
+.servicio h4 {
+    margin: 0;
+}
+
+.servicio p {
+    font-size: 16px;
+    height: 180px;
+}
+
+span {
+    font-size: 80px;
+    color: #0c141c;   
+}
+
+.owl-nav { /*esto se saca al inspeccionar la página y localizar 
+            los nombres que hacen referencia a lo que queremos cambiar*/
+    text-align: center;
+}
+
+/* imagen detrás de ¿Por qué trabajar conmigo?*/
+.conmigo {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fondo-difuminado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('programacion.jpg') center/cover;
+    filter: blur(5px);
+    z-index: 0; /* lo coloca en la capa más baja*/
+}
+
+#conmigo {
+    font-weight: bold;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Mantiene el texto por encima del fondo */
+    z-index: 1;
+}
+
+.contenedor-conmigo {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+}
+
+#disenio {
+    max-width: 680px;
+    background: #96be25;
+    color: white;
+    border-radius: 8px;
+    margin-left: 50px;
+    text-align: center;
+
+}
+
+#trato {
+    max-width: 690px;
+    background: #be2596;
+    color: white;
+    border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+#analisis {
+    max-width: 690px;
+    background: #2596be;
+    color: white;
+    border-radius: 8px;
+    margin-left: 40%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- RESPONSIVE DESIGN (Móviles y Tablets) ---- */
+@media (max-width: 768px) {
+    /* Ajustes para el menú */
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px; /* Más espacio entre opciones del menú */
+        padding: 0;
+    }
+
+
+    /* Ajustes en la sección titular */
+    .titular {
+        margin-top: 100px;
+    }
+
+    .titular h1 {
+        font-size: 32px; /* Más compacto */
+    }
+
+    .titular h2 {
+        font-size: 20px;
+    }
+
+    /* Ajustes en "Sobre mí" */
+    .contenedor-sobremi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-texto-y-boton {
+        width: 100%;
+    }
+
+    /* Ajustes en servicios */
+    .contenedor-servicios {
+        grid-template-columns: 1fr; /* Un servicio por fila */
+    }
+
+    .servicio {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contenedor-conmigo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los bloques */
+        gap: 15px; /* Espacio entre bloques */
+    }
+
+    #disenio, #trato, #analisis {
+        max-width: 90%; /* Para que no ocupen todo el ancho */
+        margin-left: 0; /* Elimina el margen izquierdo fijo */
+        text-align: center;
+    }
+
+}
